@@ -46,12 +46,6 @@ Run it. Look at what actually happens.
 
 Rename the file `codemart.ts`. Re-type `calculateOrderTotal` with full annotations:
 
-```ts
-function calculateOrderTotal(items: { price: number; qty: number }[], discount: number): number {
-  return items.reduce((total, item) => total + item.price * item.qty, 0) - discount;
-}
-```
-
 Try calling it with the **exact same buggy `order` object** from Part 0 (string price, string discount). Don't fix the data — just add the types and try to compile.
 
 **Your task:** Comment above the broken call explaining the compiler error you get, in plain English, as if explaining it to your manager who doesn't code.
